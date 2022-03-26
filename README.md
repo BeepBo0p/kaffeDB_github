@@ -1,3 +1,9 @@
+# KaffeDB
+
+## Project description:
+
+A simple database application written in python 3 using sqlite3. Allows a user to execute SQL queries to input data and search through a database via a command line interface using simple inputs like selecting from a list or writing simple text input. 
+
 ## Prequisites
 
 - Python 3.8+
@@ -7,6 +13,8 @@
 - pick: `pip install pick`
 
 - tabulate: `pip install tabulate`
+
+The project assumes a file named `kaffe.db` to present within the project directory.
 
 To populate database with mockdata, run `load_into_db.py`
 
@@ -23,5 +31,3 @@ You should now be faced with a menu. Use the up/down arrows on your keyboard to 
 This should bring you to a similar menu or prompt you for text input, depending on which sub-menu you enter.
 When presented with query results you should be able to look at the table until a keyboard-interrupt is provided.
 In the integrated VS Code terminal enter `Ctrl + C` (on windows) to return to main menu
-
-## See L2 project documentation pdf for proper documentation
