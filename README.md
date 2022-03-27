@@ -27,13 +27,14 @@ The project should now be ready to go.
 To use the app you need to log in using a pre-registered valid user. Because the app was written under tight time-constraints it does not include the option to register a new account except for executing raw queries against the database. Passwords are also stored as raw text strings which is obviously a major major limitation, but I refer again to the tight schedule.
 
 One valid user is:
-Email: henrik@gmail.com
-Password: veldigsikkertpassord123
+- Email: henrik@gmail.com
+- Password: veldigsikkertpassord123
 
-Because of time-constraints the database includes no password-hashing etc., so the security is minimal/nonexistent.
-We found this acceptable as there were no security constraints specified in the user-stories other than an implicit association between entered data and a user.
+Because of a lack of security specifications and time-constraints, the database includes no password-hashing etc., so the security is minimal/nonexistent.
+As this is primarily an exercise in applying SQL and absolutely not a serious production ready database, this is acceptable.
 A valid user can be found by looking through the database with a database-viewer tool or reading through the `users` list in `load_into_db.py`
 Until valid login credentials have been entered, the application should inform you what error you have commited with your input, and then reprompt you to ented valid credentials.
+
 You should now be faced with a menu. Use the up/down arrows on your keyboard to navigate, then enter to select an option.
 This should bring you to a similar menu or prompt you for text input, depending on which sub-menu you enter.
 When presented with query results you should be able to look at the table until a keyboard-interrupt is provided.
